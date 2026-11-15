@@ -1,0 +1,135 @@
+/* Design tokens. Colors are space-separated RGB channels so Tailwind opacity modifiers work.
+   To restyle the app, edit values here or add a new [data-theme] block + one entry in theme/ThemeProvider.jsx. */
+
+:root,
+[data-theme="executive-light"] {
+  color-scheme: light;
+  --bg-canvas: 244 246 250;
+  --bg-surface: 255 255 255;
+  --bg-surface-raised: 250 251 255;
+  --bg-muted: 237 240 246;
+  --bg-overlay: 15 23 42;
+
+  --text-primary: 15 23 42;
+  --text-secondary: 71 85 105;
+  --text-muted: 100 116 139;
+  --text-on-accent: 255 255 255;
+
+  --accent: 37 99 235;
+  --accent-hover: 29 78 216;
+  --accent-soft: 219 234 254;
+
+  --border-subtle: 226 232 240;
+  --border-strong: 203 213 225;
+
+  --status-client: 185 28 28;      --status-client-soft: 254 226 226;
+  --status-assistant: 29 78 216;   --status-assistant-soft: 219 234 254;
+  --status-waiting: 180 83 9;      --status-waiting-soft: 254 243 199;
+  --status-fyi: 71 85 105;         --status-fyi-soft: 241 245 249;
+  --status-success: 21 128 61;     --status-success-soft: 220 252 231;
+  --status-review: 161 98 7;       --status-review-soft: 254 249 195;
+
+  --radius-card: 0.75rem;
+  --radius-control: 0.5rem;
+  --radius-pill: 9999px;
+
+  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 4px 12px rgb(15 23 42 / 0.03);
+  --shadow-pop: 0 12px 32px rgb(15 23 42 / 0.14);
+
+  --space-card: 1rem;
+  --space-row: 0.875rem;
+  --space-section: 1.5rem;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --tracking-display: -0.015em;
+  --weight-heading: 600;
+}
+
+[data-theme="midnight-obsidian"] {
+  color-scheme: dark;
+  --bg-canvas: 9 10 15;
+  --bg-surface: 18 20 28;
+  --bg-surface-raised: 26 29 40;
+  --bg-muted: 30 33 45;
+  --bg-overlay: 0 0 0;
+
+  --text-primary: 237 240 247;
+  --text-secondary: 166 173 190;
+  --text-muted: 128 135 153;
+  --text-on-accent: 10 10 15;
+
+  --accent: 129 140 248;
+  --accent-hover: 165 180 252;
+  --accent-soft: 38 40 80;
+
+  --border-subtle: 38 42 56;
+  --border-strong: 58 63 82;
+
+  --status-client: 248 113 113;    --status-client-soft: 69 26 30;
+  --status-assistant: 96 165 250;  --status-assistant-soft: 23 37 84;
+  --status-waiting: 251 191 36;    --status-waiting-soft: 66 46 10;
+  --status-fyi: 148 155 170;       --status-fyi-soft: 32 35 46;
+  --status-success: 74 222 128;    --status-success-soft: 20 55 34;
+  --status-review: 250 204 21;     --status-review-soft: 60 50 10;
+
+  --radius-card: 1rem;
+  --radius-control: 0.625rem;
+  --radius-pill: 9999px;
+
+  --shadow-card: 0 0 0 1px rgb(255 255 255 / 0.04), 0 8px 24px rgb(0 0 0 / 0.45);
+  --shadow-pop: 0 20px 50px rgb(0 0 0 / 0.65);
+
+  --space-card: 1rem;
+  --space-row: 0.875rem;
+  --space-section: 1.5rem;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --tracking-display: -0.02em;
+  --weight-heading: 600;
+}
+
+[data-theme="editorial-warm"] {
+  color-scheme: light;
+  --bg-canvas: 249 244 234;
+  --bg-surface: 255 253 248;
+  --bg-surface-raised: 253 249 241;
+  --bg-muted: 241 233 219;
+  --bg-overlay: 60 40 20;
+
+  --text-primary: 43 33 24;
+  --text-secondary: 99 84 68;
+  --text-muted: 128 112 94;
+  --text-on-accent: 255 250 240;
+
+  --accent: 154 52 18;
+  --accent-hover: 124 45 18;
+  --accent-soft: 254 235 200;
+
+  --border-subtle: 230 220 200;
+  --border-strong: 208 194 168;
+
+  --status-client: 185 28 28;      --status-client-soft: 252 226 220;
+  --status-assistant: 30 90 130;   --status-assistant-soft: 219 235 245;
+  --status-waiting: 146 84 6;      --status-waiting-soft: 250 238 200;
+  --status-fyi: 110 98 82;         --status-fyi-soft: 238 231 218;
+  --status-success: 63 98 18;      --status-success-soft: 226 238 205;
+  --status-review: 146 84 6;       --status-review-soft: 250 238 200;
+
+  --radius-card: 0.375rem;
+  --radius-control: 0.375rem;
+  --radius-pill: 9999px;
+
+  --shadow-card: 0 1px 2px rgb(43 33 24 / 0.06);
+  --shadow-pop: 0 12px 28px rgb(43 33 24 / 0.18);
+
+  --space-card: 1.25rem;
+  --space-row: 1rem;
+  --space-section: 2rem;
+
+  --font-sans: "Source Serif 4", Georgia, serif;
+  --font-display: "Fraunces", Georgia, serif;
+  --tracking-display: 0em;
+  --weight-heading: 500;
+}
